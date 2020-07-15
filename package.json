@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-typed-dynamodb",
+  "name": "@skypress/nestjs-dynamodb",
   "version": "0.0.1",
-  "description": "NestJS DynamoDB module inspired on Typegoose syntax ",
+  "description": "NestJS DynamoDB Client ",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.json",
@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build",
     "publish": "npm publish --access public"
   },
-  "author": "Garox <gabriel.perez@rokketlabs.com>",
+  "author": "BMO <bmo@skypress.io>",
   "license": "MIT",
   "private": false,
   "devDependencies": {

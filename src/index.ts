@@ -1,5 +1,5 @@
 export { DynamoDBModule } from './module/dynamodb.module'
-export { InjectDDBModel, ReturnDDBModel } from './module/dynamodb.decorators'
+export { InjectModel, ReturnModel } from './module/dynamodb.decorators'
 export {
   attribute as Attribute,
   hashKey as HashKey,

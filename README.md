@@ -1,14 +1,14 @@
-# NestJS Typed DynamoDB
+# SkyPress NestJS DynamoDB
 
 ## Description
 
-Opinated way to use DynamoDB with NestJS and typescript, heavily inspired by [nest-typegoose](https://github.com/kpfromer/nestjs-typegoose)
+Opinated way to use DynamoDB with NestJS and typescript, heavily inspired by [nestjs-typed-dynamodb](https://www.npmjs.com/package/nestjs-typed-dynamodb)
 
 ## Getting Started
 
 First install this module
 
-`yarn add nestjs-typed-dynamodb`
+`npm install @skypress/nestjs-dynamodb`
 
 Notice that it will install [dynamodb-data-mapper-annotations](https://github.com/awslabs/dynamodb-data-mapper-js/tree/master/packages/dynamodb-data-mapper-annotations) as a dependency
 
@@ -54,7 +54,7 @@ import {
   RangeKey,
   Table,
   VersionAttribute,
-} from 'nestjs-typed-dynamodb'
+} from '@skypress/nestjs-dynamodb'
 import * as nanoid from 'nanoid'
 
 @Table('cat')
@@ -82,16 +82,16 @@ Note: nanoid is only used a way to assign a random id, feel free to use whatever
 
 ```typescript
 import { Injectable } from '@nestjs/common'
-import { ReturnDDBModel, InjectDDBModel } from 'nestjs-typed-dynamodb'
+import { ReturnModel, InjectModel } from '@skypress/nestjs-dynamodb'
 import { Cat } from './cat.schema'
 import { CatInput } from './cat.input'
 
-const ReturnModel = ReturnDDBModel<Cat>()
+const ReturnModel = ReturnModel<Cat>()
 
 @Injectable()
 export class CatsService {
   constructor(
-    @InjectDDBModel(Cat)
+    @InjectModel(Cat)
     private readonly catModel: typeof ReturnModel,
   ) {}
 
@@ -130,7 +130,7 @@ Now you can use your service as you wish!
 ```typescript
 import { Module } from '@nestjs/common'
 import { TypegooseModule } from 'nestjs-typegoose'
-import { CatsModule } from './cat.module.ts'
+import { Cats } from './cat.schema'
 
 @Module({
   imports: [
