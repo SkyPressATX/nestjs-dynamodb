@@ -35,5 +35,13 @@
     "aws-sdk": "^2.624.0",
     "is-class": "^0.0.9",
     "reflect-metadata": "^0.1.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyPressATX/nestjs-dynamodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SkyPressATX/nestjs-dynamodb/issues"
+  },
+  "homepage": "https://github.com/SkyPressATX/nestjs-dynamodb#readme"
 }
