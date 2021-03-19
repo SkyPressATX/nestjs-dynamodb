@@ -25,13 +25,13 @@
     "@aws/dynamodb-data-mapper": "^0.7.3",
     "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
     "@aws/dynamodb-data-marshaller": "^0.7.3",
-    "@nestjs/common": "^6.8.0"
+    "@nestjs/common": "^7.6.13"
   },
   "dependencies": {
     "@aws/dynamodb-data-mapper": "^0.7.3",
     "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
     "@aws/dynamodb-data-marshaller": "^0.7.3",
-    "@nestjs/common": "^6.11.8",
+    "@nestjs/common": "^7.6.13",
     "aws-sdk": "^2.624.0",
     "is-class": "^0.0.9",
     "reflect-metadata": "^0.1.13"
