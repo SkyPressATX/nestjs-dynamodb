@@ -20,7 +20,7 @@ In order to create a DynamoDB connection
 
 ```typescript
 import { Module } from '@nestjs/common'
-import { TypegooseModule } from 'nestjs-typed-dynamodb'
+import { DynamoDBModule } from '@skypress/nestjs-dynamodb'
 import { CatsModule } from './cat.module.ts'
 
 @Module({
@@ -129,7 +129,7 @@ Now you can use your service as you wish!
 
 ```typescript
 import { Module } from '@nestjs/common'
-import { TypegooseModule } from 'nestjs-typegoose'
+import { DynamoDBModule } from '@skypress/nestjs-dynamodb'
 import { Cats } from './cat.schema'
 
 @Module({
