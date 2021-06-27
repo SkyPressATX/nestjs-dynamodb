@@ -1,7 +1,7 @@
 import { Type } from '@nestjs/common'
 import { ModuleMetadata } from '@nestjs/common/interfaces'
-import { DynamoDB } from 'aws-sdk'
-import { ConfigurationOptions, APIVersions } from 'aws-sdk/lib/config'
+import { ConfigurationOptions, DynamoDB } from 'aws-sdk'
+import { APIVersions } from 'aws-sdk/lib/config'
 import { ConfigurationServicePlaceholders } from 'aws-sdk/lib/config_service_placeholders'
 import { CreateTableOptions } from '@aws/dynamodb-data-mapper'
 
