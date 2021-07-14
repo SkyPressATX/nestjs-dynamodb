@@ -76,7 +76,7 @@ export class GetModelForClass<T extends instanceOfDynamoDBClass> {
           this.getFindItemInput(key, input[key]),
           (err, data) => {
             if (err) reject(err)
-            resolve(data.Items)
+            else resolve(data.Items)
           },
         ),
       )
@@ -97,7 +97,7 @@ export class GetModelForClass<T extends instanceOfDynamoDBClass> {
         this.getDeleteItemInput(id),
         (err, data) => {
           if (err) reject(err)
-          resolve(data)
+          else resolve(data)
         },
       ),
     )
