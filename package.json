@@ -24,14 +24,13 @@
   "peerDependencies": {
     "@aws/dynamodb-data-mapper": "^0.7.3",
     "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
-    "@aws/dynamodb-data-marshaller": "^0.7.3",
-    "@nestjs/common": "^7.6.13"
+    "@aws/dynamodb-data-marshaller": "^0.7.3"
   },
   "dependencies": {
     "@aws/dynamodb-data-mapper": "^0.7.3",
     "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
     "@aws/dynamodb-data-marshaller": "^0.7.3",
-    "@nestjs/common": "^7.6.13",
+    "@nestjs/common": "^7.6.18",
     "aws-sdk": "^2.624.0",
     "is-class": "^0.0.9",
     "reflect-metadata": "^0.1.13"
